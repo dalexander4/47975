@@ -10,6 +10,7 @@
 #include <ctime>
 #include "Players.h"
 #include "Color.h"
+#include "Winner.h"
 
 using namespace std;
 
@@ -22,18 +23,19 @@ void initBoard(Board&);
 void displayRules();
 void getNames();
 void displayBoard(Board);
-void chooseMove(Board&, int);
+bool chooseMove(Board&, int);
 void PlayGame(Board&, int);
 int HeadsTails();
 bool TestScore(Board&,int, int);
+void AnnceWinner();
 /*
  * 
  */
 int main(int argc, char** argv) {
     
-    Board brd;
+    Board brd;//declare a Board structure object
     int turn;
-    color gtClr;
+    color gtClr;//declare a color object
     
     initBoard(brd);
     displayRules();
@@ -41,6 +43,9 @@ int main(int argc, char** argv) {
     gtClr.setColor();
     turn = HeadsTails();
     PlayGame(brd, turn);
+    AnnceWinner();
+   
+    
     
     
     
@@ -104,25 +109,32 @@ int HeadsTails(){
 }
 void PlayGame(Board &brd, int x){
     
-    Players plyr;
+    Winner plyr;
     bool flag=false; //set flag to test for winner
     chooseMove(brd, x);
     x++;
-    
+    //loop till we gone through all pieces on the board.
     for(int i = 0; i < 41; i++){
-        if(x>1)x=0;//return to the previous player.
-        chooseMove(brd, x);
-        
+        //return to the previous player.
+        if(x>1)x=0;
+        //return true if a player wins, else return false.
+        flag = chooseMove(brd, x);
+        //If a winner is decided break
+        if(flag==true){
+            plyr.setWinner(x);
+            break;
+        }
+        //Increment player count
         x++;
-        
-        
-        
+     
+        //Display four square board
         displayBoard(brd);
         
-        //flag=TestScore(brd);
         if (flag==true) i = 45;//test to break out of loop.
     }
+    if(flag==false){
     cout << "There is no winner!" << endl;
+    }
     
 }
 void displayBoard(Board brd){
@@ -145,11 +157,11 @@ void displayBoard(Board brd){
     cout << "  -----------------------------" << endl;
     
 }
-void chooseMove(Board &choice, int x){
+bool chooseMove(Board &choice, int x){
     
     color clr;//declare a color object 
     int col, r = 6, count=0;
-    bool doOvr;
+    bool doOvr, win = false;
     
     cout << clr.getPlayer(x) << " its your turn!" << endl;
   
@@ -162,9 +174,11 @@ void chooseMove(Board &choice, int x){
     cout << clr.getColor(x) << endl;
     
     for(int i = 5; i >= 0; i--){
-        if(choice.board[i][col-1]== 'O'){//test to see if the column is taken
+        //test to see if the column is taken
+        if(choice.board[i][col-1]== 'O'){
             choice.board[i][col-1] = clr.getColor(x);
-            TestScore(choice, i, col-1);
+            //test to see if the players choice makes four in a row
+            win = TestScore(choice, i, col-1);
             i = -1; 
         }
         else if(i == 0){//Test to see if the column is full
@@ -175,40 +189,118 @@ void chooseMove(Board &choice, int x){
     r--;//decrement the row.
     }while(doOvr == false);
     
-
+    return win;
 }
 bool TestScore(Board &brd, int r, int c){
     bool flag = false;
-    int count = 0;
+    int count = 1;
     
     if(c == 0){
-        for(int i = 1; i<7; i++){
+        for(int i = c+1; i<7; i++){
            if(brd.board[r][c]==brd.board[r][i]){
             count++;
             } 
+           else break;
         }
         
    
     }
     if(c == 1){
-   
+        for(int i = c+1; i<7; i++){
+           if(brd.board[r][c]==brd.board[r][i]){
+            count++;
+            }
+           else break;
+        }
+        for(int j = c-1; j>=0; j--){
+           if(brd.board[r][c]==brd.board[r][j]){
+            count++;
+            }
+           else break;
+        }
     }
     if(c == 2){
-   
+        for(int i = c+1; i<7; i++){
+           if(brd.board[r][c]==brd.board[r][i]){
+            count++;
+            }
+           else break;
+        }
+        for(int j = c-1; j>=0; j--){
+           if(brd.board[r][c]==brd.board[r][j]){
+            count++;
+            }
+           else break;
+        }
     }
     if(c == 3){
-   
+        for(int i = c+1; i<7; i++){
+           if(brd.board[r][c]==brd.board[r][i]){
+            count++;
+            }
+           else break;
+        }
+        for(int j = c-1; j>=0; j--){
+           if(brd.board[r][c]==brd.board[r][j]){
+            count++;
+            }
+           else break;
+        }
     }
     if(c == 4){
-   
+        for(int i = c+1; i<7; i++){
+           if(brd.board[r][c]==brd.board[r][i]){
+            count++;
+            }
+           else break;
+        }
+        for(int j = c-1; j>=0; j--){
+           if(brd.board[r][c]==brd.board[r][j]){
+            count++;
+            }
+           else break;
+        }
     }
     if(c == 5){
-   
+        for(int i = c+1; i<7; i++){
+           if(brd.board[r][c]==brd.board[r][i]){
+            count++;
+            }
+           else break;
+        }
+        for(int j = c-1; j>=0; j--){
+           if(brd.board[r][c]==brd.board[r][j]){
+            count++;
+            }
+           else break;
+        }
     }
     if(c == 6){
-   
+        for(int i = c+1; i<7; i++){
+           if(brd.board[r][c]==brd.board[r][i]){
+            count++;
+            }
+           else break;
+        }
+        for(int j = c-1; j>=0; j--){
+           if(brd.board[r][c]==brd.board[r][j]){
+            count++;
+            }
+           else break;
+        }
     }
+    
+    cout<< "count =" << count << endl;
+    
+    if(count == 4)flag =true;//if a player gets to four send a flag
   
     
     return flag;
+}
+void AnnceWinner(){
+    
+    Winner win;
+    cout << "The winner is "; 
+    win.getWinner();
+    
 }
