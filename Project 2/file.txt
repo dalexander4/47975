@@ -1,0 +1,8 @@
+		Welcome to connect four.
+   In this game there will be two players who drop
+   their certain colored game piece down a column
+   of the gameboard and try to connect four pieces
+    in a row. The player can connect their pieces 
+   diagonally, horizontally, or vertically. The 
+             first player to four wins.
+                    Lets play!!!!

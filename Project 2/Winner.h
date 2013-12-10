@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   Winner.h
  * Author: rcc
  *
@@ -14,10 +14,8 @@ class Winner: public Players{
     private:
         int winner;
     public:
-        void setWinner(int);
-        void getWinner();
-            
+        void AnnceWinner(int);
+
 };
 
 #endif	/* WINNER_H */
-

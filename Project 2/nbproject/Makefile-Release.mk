@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/_ext/1050388284/Players.o \
 	${OBJECTDIR}/Color.o \
+	${OBJECTDIR}/GameBoard.o \
 	${OBJECTDIR}/Winner.o \
 	${OBJECTDIR}/main.o
 
@@ -74,6 +75,11 @@ ${OBJECTDIR}/Color.o: Color.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Color.o Color.cpp
+
+${OBJECTDIR}/GameBoard.o: GameBoard.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/GameBoard.o GameBoard.cpp
 
 ${OBJECTDIR}/Winner.o: Winner.cpp 
 	${MKDIR} -p ${OBJECTDIR}

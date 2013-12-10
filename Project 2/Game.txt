@@ -1,0 +1,338 @@
+		Welcome to connect four.
+   In this game there will be two players who drop
+   their certain colored game piece down a column
+   of the gameboard and try to connect four pieces
+    in a row. The player can connect their pieces 
+   diagonally, horizontally, or vertically. The 
+             first player to four wins.
+                    Lets play!!!!
+Enter the name of player 1: Dillin
+Enter the name of player 2: Alexander
+
+We will flip a coin to see who goes first!
+Player 1 type H for heads or T for tails: T
+
+The coin flip was tails.
+Dillin its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 1
+B
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | O | O | O | O | O | O | O |
+5 | O | O | O | O | O | O | O |
+6 | B | O | O | O | O | O | O |
+  -----------------------------
+Alexander its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 2
+G
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | O | O | O | O | O | O | O |
+5 | O | O | O | O | O | O | O |
+6 | B | G | O | O | O | O | O |
+  -----------------------------
+Dillin its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 3
+B
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | O | O | O | O | O | O | O |
+5 | O | O | O | O | O | O | O |
+6 | B | G | B | O | O | O | O |
+  -----------------------------
+Alexander its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 1
+G
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  2 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | O | O | O | O | O | O | O |
+5 | G | O | O | O | O | O | O |
+6 | B | G | B | O | O | O | O |
+  -----------------------------
+Dillin its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 2
+B
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  2 |
+Diagonal count (Negative slope) =  2 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | O | O | O | O | O | O | O |
+5 | G | B | O | O | O | O | O |
+6 | B | G | B | O | O | O | O |
+  -----------------------------
+Alexander its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 3
+G
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  2 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | O | O | O | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | O | O | O | O |
+  -----------------------------
+Dillin its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 4
+B
+
+_____________________________________
+horizontal count =                 2 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | O | O | O | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Alexander its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 2
+G
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  2 |
+Diagonal count (Negative slope) =  2 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | O | G | O | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Dillin its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 1
+B
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  3 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | O | O | O | O | O | O |
+4 | B | G | O | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Alexander its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 2
+G
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   2 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | G | O | O | O | O | O |
+4 | B | G | O | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Dillin its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 3
+B
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  3 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | O | G | O | O | O | O | O |
+4 | B | G | B | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Alexander its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 1
+G
+
+_____________________________________
+horizontal count =                 2 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  3 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | G | G | O | O | O | O | O |
+4 | B | G | B | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Dillin its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 3
+B
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   2 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | O | O | O | O | O | O |
+3 | G | G | B | O | O | O | O |
+4 | B | G | B | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Alexander its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 2
+G
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   3 |
+Diagonal count (Positive slope) =  2 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | O | G | O | O | O | O | O |
+3 | G | G | B | O | O | O | O |
+4 | B | G | B | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Dillin its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 1
+B
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   1 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | O | O | O | O | O | O |
+2 | B | G | O | O | O | O | O |
+3 | G | G | B | O | O | O | O |
+4 | B | G | B | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+Alexander its your turn!
+What column would you like to drop your piece? (enter a column number)
+Column: 2
+G
+
+_____________________________________
+horizontal count =                 1 |
+Vertical count =                   4 |
+Diagonal count (Positive slope) =  1 |
+Diagonal count (Negative slope) =  1 |
+-------------------------------------
+
+C:  1   2   3   4   5   6   7   
+1 | O | G | O | O | O | O | O |
+2 | B | G | O | O | O | O | O |
+3 | G | G | B | O | O | O | O |
+4 | B | G | B | O | O | O | O |
+5 | G | B | G | O | O | O | O |
+6 | B | G | B | B | O | O | O |
+  -----------------------------
+
+The winner is Alexander
+Congratulations!!!!

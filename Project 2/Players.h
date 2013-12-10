@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   Players.h
  * Author: rcc
  *
@@ -13,11 +13,10 @@ class Players{
 private:
     std::string plyr[2];
 public:
-   Players();
+    Players();
    void setPlayr(std::string,std::string);
    std::string getPlayer(int);
 };
 
 
 #endif	/* PLAYERS_H */
-

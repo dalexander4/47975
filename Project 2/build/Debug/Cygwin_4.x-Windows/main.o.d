@@ -1,8 +1,10 @@
-build/Debug/Cygwin_4.x-Windows/main.o: main.cpp Players.h Color.h \
- Winner.h
+build/Debug/Cygwin_4.x-Windows/main.o: main.cpp GameBoard.h Color.h \
+ Players.h Winner.h
 
-Players.h:
+GameBoard.h:
 
 Color.h:
+
+Players.h:
 
 Winner.h:

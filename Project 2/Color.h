@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   Color.h
  * Author: rcc
  *
@@ -10,14 +10,14 @@
 #include "Players.h"
 
 class color: public Players{
-    private: 
+    private:
         char clr[2];
     public:
         color();
         void setColor();
         char getColor(int);
-            
+
+
 };
 
 #endif	/* COLOR_H */
-
